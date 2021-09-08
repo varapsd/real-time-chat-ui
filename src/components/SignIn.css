@@ -1,0 +1,86 @@
+.signInPage{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+.left{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    background-color: #1E90FF;
+    color: white;
+    text-align: center;
+}
+
+.right .heading{
+    margin-top: 25%;
+    text-align: center;
+    width: 100%;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.right .para{
+    padding: 0;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.right .signIn{
+    background-color: white;
+    color: #1E90FF;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 5px 50px;
+}
+.left .heading{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 25%;
+    color: #303030;
+}
+.left .rowLine{
+    display: flex;
+    justify-content: center;
+}
+.left .icon{
+    width: fit-content;
+    background-color: #1E90FF;
+    border-radius: 50px;
+    padding: 6px 10px 10px 10px;
+    margin: 5px;
+}
+
+.left .formInput{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.formInput .inputField{
+    border-radius: 50px !important;
+}
+
+.left .signIn{
+    background-color: #1E90FF;
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 50px;
+    font-weight: normal;
+    font-size: 25px;
+}
