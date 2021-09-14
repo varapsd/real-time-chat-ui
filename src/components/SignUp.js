@@ -23,7 +23,8 @@ function SignUp(){
             phone : formDataObj.phone,
             password : formDataObj.password
         }
-        var url = "http://localhost:8080/"
+        //var url = "http://localhost:8080/"
+        var url = "https://socket0chat.herokuapp.com/"
         axios.post(url+"signup",request)
         .then(res=>{
             alert(res.data.message);

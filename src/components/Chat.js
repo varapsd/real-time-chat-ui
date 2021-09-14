@@ -5,7 +5,8 @@ import RightComponent from "./RightComponent";
 import { io } from "socket.io-client";
 import { useState } from "react";
 
-const socket = io.connect("http://localhost:8080");
+//const socket = io.connect("http://localhost:8080");
+const socket = io.connect("https://socket0chat.herokuapp.com/");
 function Chat(props){
     const [selectedUser, setSelectedUser] = useState(null);
     // socket.emit("users", {user: props.userId});
