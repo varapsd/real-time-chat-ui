@@ -34,7 +34,7 @@ function SignUp(){
     return(
         <div className="signInPage">
             <Container className="right">
-                <Col className="heading">Luo Luo</Col>
+                <Col className="heading">Real time chat</Col>
                 <Col>Get connected with chat</Col>
                 <br /><br />
                 <Col><p>Already have an Account ??</p></Col>

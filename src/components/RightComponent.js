@@ -115,7 +115,7 @@ function RightComponent(props){
                             <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" value={message} onChange={(e)=>{
                                 setMessage(e.target.value);
                             }}/>
-                            <InputGroup.Text id="inputGroup-sizing-lg" className="sendBtn" type="submit">Send</InputGroup.Text>
+                            <InputGroup id="inputGroup-sizing-lg" className="sendBtn" type="submit">Send</InputGroup>
                         </InputGroup>
                         </Form>
                     </Row>
