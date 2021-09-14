@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Col, Container, Row, InputGroup, FormControl, Form } from "react-bootstrap";
+import { Col, Container, Row, InputGroup, FormControl, Form, Button } from "react-bootstrap";
 import './RightComponent.css';
 
 function RightComponent(props){
@@ -115,7 +115,7 @@ function RightComponent(props){
                             <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" value={message} onChange={(e)=>{
                                 setMessage(e.target.value);
                             }}/>
-                            <InputGroup id="inputGroup-sizing-lg" className="sendBtn" type="submit">Send</InputGroup>
+                            <InputGroup.Text id="inputGroup-sizing-lg"><Button className="sendBtn" type="submit">Send</Button></InputGroup.Text>
                         </InputGroup>
                         </Form>
                     </Row>
