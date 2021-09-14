@@ -1,0 +1,46 @@
+
+.chatRight{
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+}
+.chatRight .scrollArea{
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+.scrollArea .recieved span{
+    width: fit-content;
+    border: solid 1px #1E90FF;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30% 25px 25px 25px;
+}
+.scrollArea .sent{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+.scrollArea .sent .grow{
+    flex-grow: 1;
+}
+.scrollArea .sent .fit{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 25px 25% 25px 25px;
+    margin: 10px;
+    background-color: #1E90FF;
+    color: white;
+
+}
+
+
+.righComponent .sendBtn{
+    background-color: #1E90FF;
+    color: white;
+    cursor: pointer;
+    height: fit-content;
+}

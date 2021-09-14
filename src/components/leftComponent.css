@@ -1,0 +1,21 @@
+.leftComponent{
+    width: 30%;
+    color: white;
+    border-right: solid #1E90FF;
+}
+
+.leftComponent .heading{
+    background-color: #1E90FF;
+}
+
+.leftComponent .userBlock{
+    padding: 10px 15px;
+    color: #1E90FF;
+    font-size: medium;
+    border-bottom:solid 1px #1E90FF;
+}
+
+.leftComponent .userBlock:hover{
+    background-color: #1E90FF;
+    color: white;
+}

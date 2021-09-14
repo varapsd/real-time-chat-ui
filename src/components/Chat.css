@@ -1,0 +1,18 @@
+.chatPage{
+    padding: 0 !important;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.chatPage .heading{
+    padding: 15px;
+    padding-left: 30px;
+    border-bottom: solid 1px #1E90FF;
+    width: 100%;
+}
+
+.mainChat{
+    display: flex;
+    height: calc(100% - 60px);
+    width: 100%;
+}
