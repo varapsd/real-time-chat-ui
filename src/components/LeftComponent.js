@@ -4,16 +4,17 @@ import './leftComponent.css'
 
 function LeftComponent(props){
     const [usersList, setUsersList] = useState([]);
+    const [userName, setUserName] = useState("");
     props.socket.emit("users",{userId : props.userId});
     useEffect(() => {
-        props.socket.once("users", (payload) => {
+        props.socket.on("users", (payload) => {
           setUsersList(payload);
         })
-    })
-    var curUserName = ""
+    },[])
+    
     usersList.forEach(element => {
-        if(element.userId === props.userId){
-            curUserName = element.name;
+        if(userName=="" && element.userId == props.userId){
+            setUserName(element.name);
         }
     });
     const selectUser = (e)=>{
@@ -21,7 +22,7 @@ function LeftComponent(props){
     }
     return(
         <div className="leftComponent">
-            <Col className="heading">{curUserName.toUpperCase()}</Col>
+            <Col className="heading">{userName && userName.toUpperCase()}</Col>
             <Col>
                 <InputGroup size="sm" style={{marginTop:"2px", paddingBottom: "2px", borderBottom:"solid 1px #1E90FF"}}>
                     <FormControl aria-label="Small" aria-describedby="inputGroup-sizing-sm" style={{border:"solid 1px #1E90FF"}}/>
@@ -30,6 +31,9 @@ function LeftComponent(props){
             </Col>
             {usersList.map((user,index)=>{
                 if(user.userId != props.userId){
+                    if(props.selectedUser && props.selectedUser.userId == user.userId){
+                        return <Col className="userBlock highlight" key={index} onClick={()=>selectUser(user)}><span>{user.name}</span></Col>
+                    }
                     return <Col className="userBlock" key={index} onClick={()=>selectUser(user)}><span>{user.name}</span></Col>;
                 }
             })}

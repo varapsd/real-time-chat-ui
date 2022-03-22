@@ -7,22 +7,24 @@ import {
   } from "react-router-dom";
 import Chat from "./Chat";
 import { useState } from "react";
+import useToken from "./token";
 
 function Home(){
     const [user, setUser] = useState(null);
+    const { setToken, logout, token} = useToken();
     const login = (userId)=>{
         setUser(userId);
     }
-    if(user){
+    if(token){
         return(
-            <Chat userId={user}/>
+            <Chat userId={token} logout={logout}/>
         )
     }
     else{
         return(
             <Router>
                 <Switch>
-                    <Route exact path="/" ><SignIn login={login}/></Route>
+                    <Route exact path="/" ><SignIn setToken={setToken}/></Route>
                     <Route path="/signup"><SignUp /></Route>
                 </Switch>
             </Router>

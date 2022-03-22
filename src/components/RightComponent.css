@@ -44,3 +44,15 @@
     cursor: pointer;
     height: fit-content;
 }
+
+.callIcon{
+    cursor: pointer;
+}
+
+.fileIcon{
+    cursor: pointer;
+}
+.hide{
+    display: none !important;
+    visibility: none !important;
+}

@@ -1,0 +1,16 @@
+.modal-90w{
+    width: 90%;
+}
+
+.modelFooter{
+    justify-content: center !important;
+}
+.videoCallStateIcon{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

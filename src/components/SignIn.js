@@ -18,7 +18,8 @@ function SignIn(props){
         .then(res=>{
             if(res.data.isSuccess){
                 //console.log(props)
-                props.login(res.data.userId);
+                //props.login(res.data.userId);
+                props.setToken(res.data.userId);
             }
             else{
                 setError("Invalid credentials")
@@ -51,7 +52,7 @@ function SignIn(props){
                     </Row>
                     <Row>
                         <InputGroup size="lg" className="formInput">
-                            <FormControl aria-label="Large" required name="pass" type="password" aria-describedby="inputGroup-sizing-sm" className="inputField" placeholder="Password"/>
+                            <FormControl aria-label="Large" required name="password" type="password" aria-describedby="inputGroup-sizing-sm" className="inputField" placeholder="Password"/>
                         </InputGroup>
                     </Row>
                     <Row>

@@ -19,3 +19,8 @@
     background-color: #1E90FF;
     color: white;
 }
+
+.highlight{
+    background-color: #1E90FF;
+    color: white !important;
+}

@@ -11,6 +11,7 @@
     width: 100%;
 }
 
+
 .mainChat{
     display: flex;
     height: calc(100% - 60px);
